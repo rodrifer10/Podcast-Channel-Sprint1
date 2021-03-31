@@ -1,0 +1,680 @@
+* {
+  margin: 0px;
+}
+
+main h1, main h2, main .conoceMas, main .podcast h1, main .podcast .spotify, main .temas .icons, main .novedades button, footer h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 44px;
+}
+
+header .navbar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 5%;
+}
+
+header .navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5%;
+}
+
+header .navbar .menu i:hover {
+  color: #0000FE;
+}
+
+header .navbar .menu .links {
+  display: none;
+}
+
+header .navbar .menu .fa-times {
+  display: none;
+}
+
+header .checkMenu {
+  display: none;
+}
+
+header .ddMenu {
+  display: none;
+  position: relative;
+}
+
+header .ddMenu ul {
+  width: 100%;
+  background-color: #0000FE;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 16px;
+}
+
+header .ddMenu ul li {
+  list-style: none;
+  background-color: #0000FE;
+  font-family: 'IBM Plex Mono', monospace;
+  width: 100%;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+header .ddMenu ul li a {
+  text-decoration: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+header .ddMenu ul li a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+header .checkMenu:checked ~ .ddMenu {
+  display: block;
+}
+
+header .checkMenu:checked ~ .navbar > .menu > label > #barras {
+  display: none;
+}
+
+header .checkMenu:checked ~ .navbar > .menu > label > #cruz {
+  display: block;
+}
+
+main h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+main .hello {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+main .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .subtitle .subResp {
+  display: none;
+}
+
+main h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+main .conoceMas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 36px;
+}
+
+main .conoceMas button {
+  background-color: #00F3BB;
+  height: 48px;
+  width: 288px;
+  border: 0px;
+  font-family: 'IBM Plex Mono-Medium', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+main .conoceMas button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+main .podcast {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-top: 36px;
+  -webkit-transform: skew(0deg, -5deg);
+          transform: skew(0deg, -5deg);
+  width: 100%;
+}
+
+main .podcast h1 {
+  color: #FFFFFF;
+  -webkit-transform: skew(0deg, 5deg);
+          transform: skew(0deg, 5deg);
+  margin-top: 36px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+main .podcast .spotify {
+  -webkit-transform: skew(0deg, 5deg);
+          transform: skew(0deg, 5deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin-bottom: 100px;
+}
+
+main .celular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 519px;
+  position: relative;
+  top: -70px;
+  margin-bottom: -35px;
+}
+
+main .dondeVenimos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+main .dondeVenimos .titleDonde {
+  margin-bottom: 16px;
+}
+
+main .dondeVenimos h2 {
+  margin-bottom: 10px;
+}
+
+main .invitades {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+main .invitades .titleInvitades {
+  margin-bottom: 16px;
+}
+
+main .invitades .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .invitades .images .invitade {
+  width: 100%;
+}
+
+main .temas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+main .temas .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .temas .icons .iconText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .temas .icons .iconText .icon {
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+main .temas .icons .iconText .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+}
+
+main .novedades {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  -webkit-transform: skew(0deg, -5deg);
+          transform: skew(0deg, -5deg);
+  width: 100%;
+  padding-bottom: 64px;
+}
+
+main .novedades h1 {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  -webkit-transform: skew(0deg, 5deg);
+          transform: skew(0deg, 5deg);
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 300;
+}
+
+main .novedades button {
+  -webkit-transform: skew(0deg, 5deg);
+          transform: skew(0deg, 5deg);
+  margin-bottom: 36px;
+  background-color: #00F3BB;
+  height: 48px;
+  width: 288px;
+  border: 0px;
+  font-family: 'IBM Plex Mono-Medium', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+main .novedades button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -50px;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  padding-bottom: 12px;
+}
+
+footer h2 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+footer .redes a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer .redes a:hover {
+  color: #0000FE;
+}
+
+@media screen and (min-width: 321px) {
+  .hello br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header .navbar {
+    height: 80px;
+  }
+  header .navbar .logo {
+    width: 36px;
+    height: 36px;
+    margin-left: 6.9%;
+  }
+  header .navbar .menu i {
+    display: none;
+  }
+  header .navbar .menu .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 6.9%;
+  }
+  header .navbar .menu .links a {
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+  header .navbar .menu .links a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  main h1 {
+    margin: 0px;
+  }
+  main h2 {
+    font-size: 16px;
+    margin: 0px;
+  }
+  main .hello {
+    font-size: 64px;
+    margin-top: 120px;
+    margin-left: 13.9%;
+    margin-bottom: 24px;
+  }
+  main .hello bdi {
+    color: #0000FE;
+  }
+  main .subtitle {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 628px;
+    margin-left: 13.9%;
+  }
+  main .subtitle .subResp {
+    display: block;
+  }
+  main .subtitle .subMobile {
+    display: none;
+  }
+  main .conoceMas {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 13.9%;
+  }
+  main .conoceMas button {
+    width: 226px;
+    height: 56px;
+    font-size: 18px;
+  }
+  main .containerSkew {
+    padding-top: 64px;
+  }
+  main .containerSkew .podcast h1 {
+    margin-top: 120px;
+    font-size: 48px;
+    margin-left: 13.9%;
+    font-weight: 400;
+  }
+  main .containerSkew .spotify {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .containerSkew .spotify .spoty {
+    width: 584px;
+    height: 232px;
+    padding-top: 8px;
+    padding-bottom: 64px;
+    margin-right: 32px;
+    border-style: none;
+  }
+  main .containerCel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .containerCel .celular {
+    height: 660px;
+    width: 457.6px;
+    margin-right: 31px;
+  }
+  main .containerCel .dondeVenimos {
+    margin-left: 31px;
+  }
+  main .containerCel .dondeVenimos h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+  main .containerCel .dondeVenimos h2 {
+    width: 464px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main .invitades .titleInvitades {
+    font-size: 48px;
+    margin-left: 13.9%;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  main .invitades .images {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  main .temas {
+    margin-bottom: 0px;
+  }
+  main .temas h1 {
+    font-size: 48px;
+    margin-left: 13.9%;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  main .temas .icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0px;
+  }
+  main .temas .icons .iconText .description {
+    max-width: 220px;
+  }
+  main .containerNovedades {
+    overflow: hidden;
+  }
+  main .novedades {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 216px;
+    padding-top: 132px;
+    -webkit-transform: skew(0deg, -5deg) translateY(10%);
+            transform: skew(0deg, -5deg) translateY(10%);
+  }
+  main .novedades h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  main .novedades button {
+    width: 345px;
+    height: 56px;
+    font-size: 18px;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0px;
+  }
+  footer h2 {
+    margin-top: 0px;
+    margin-left: 100px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .redes {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 100px;
+  }
+  footer .redes i {
+    margin-left: 36px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

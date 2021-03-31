@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <!-- end links -->
+    <title>Podcast Channel</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="burger" class="checkMenu">
+        <nav class="navbar">
+            <img src="/img/logo.svg" alt="image not found" class="logo">
+            <div class="menu">
+                <label for="burger"><i class="fas fa-bars" id="barras"></i><i class="fas fa-times" id="cruz"></i></label>
+                <div class="links">
+                    <a href="#episodios">EPISODIOS</a><a href="#nosotros">NOSOTROS</a><a href="#entrevistas">ENTREVISTAS</a><a href="#topicos">TÓPICOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="ddMenu">
+            <ul>
+                <li><a href="#episodios">EPISODIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                <li><a href="#topicos">TÓPICOS</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1 class="hello">
+        Hello <s>world</s><br>
+        pale blue dot<bdi>.</bdi>
+        </h1>
+        <section class="subtitle">
+            <h2 class="subMobile">
+                Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+            </h2>
+            <h2 class="subResp">
+                El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+            </h2>
+        </section>
+        <section class="conoceMas">
+            <button type="button">
+                CONOCÉ MÁS
+            </button>
+        </section>
+        <section class="containerSkew">
+            <div class="podcast" id="episodios">
+                <h1>Episodios</h1>
+                <div class="spotify">
+                    <iframe class="spoty" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="175" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="spoty" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="175" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="spoty" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="175" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <iframe class="spoty" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="175" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </section>
+        <div class= "containerCel">
+            <section class="celular">
+                <img src="/img/phone.png" alt="image not found">
+            </section>
+            <section class="dondeVenimos" id="nosotros">
+                <h1 class="titleDonde">
+                    De dónde venimos
+                </h1>
+                <h2>
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                </h2>
+                <h2>
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </h2>
+            </section>
+        </div>
+        <section class="invitades" id="entrevistas">
+            <h1 class="titleInvitades">
+                Invitadas/os estelares
+            </h1>
+            <div class="images">
+                <img src="/img/invitade1.png" alt="image not found" class="invitade">
+                <img src="/img/invitade2.png" alt="image not found" class="invitade">
+                <img src="/img/invitade3.png" alt="image not found" class="invitade">
+                <img src="/img/invitade4.png" alt="image not found" class="invitade">
+                <img src="/img/invitade5.png" alt="image not found" class="invitade">
+                <img src="/img/invitade6.png" alt="image not found" class="invitade">
+            </div>
+        </section>
+        <section class="temas" id="topicos">
+            <h1>
+                Algunos de nuestros temas
+            </h1>
+            <div class="icons">
+                <div class="iconText">
+                    <img src="/img/icon1.svg" alt="image not found" class="icon">
+                    <h3 class="description">Trabajo remoto</h3>
+                </div>
+                <div class="iconText">
+                    <img src="/img/icon2.svg" alt="image not found" class="icon">
+                    <h3 class="description">Repensando la programación</h3>
+                </div>
+                <div class="iconText">
+                    <img src="/img/icon3.svg" alt="image not found" class="icon">
+                    <h3 class="description">Bases del código</h3>
+                </div>
+                <div class="iconText">
+                    <img src="/img/icon4.svg" alt="image not found" class="icon">
+                    <h3 class="description">Seguridad informática</h3>
+                </div>
+            </div>
+        </section>
+        <div class="containerNovedades">
+            <section class="novedades">
+                <h1>
+                    ¿Querés las últimas novedades?
+                </h1>
+                <button type="button">
+                    ESCUCHÁ LOS EPISODIOS
+                </button>
+            </section>
+        </div>
+    </main>
+    <footer style="display: flex; justify-content: space-between;">
+        <h2>
+            © 2020 — Hello blue pale dot
+        </h2>
+        <div class="redes">
+            <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
