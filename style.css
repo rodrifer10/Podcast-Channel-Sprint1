@@ -2,7 +2,7 @@
   margin: 0px;
 }
 
-main h1, main h2, main .conoceMas, main .podcast h1, main .podcast .spotify, main .temas .icons, main .novedades button, footer h2 {
+main h1, main h2, main .conoceMas, main .podcast h1, main .podcast .spotify, main .temas .icons, main .novedades .button, footer h2 {
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -172,7 +172,11 @@ main .conoceMas {
   margin-top: 36px;
 }
 
-main .conoceMas button {
+main .conoceMas .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
   background-color: #00F3BB;
   height: 48px;
   width: 288px;
@@ -184,9 +188,15 @@ main .conoceMas button {
   letter-spacing: 0;
   text-align: center;
   line-height: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .conoceMas button:hover {
+main .conoceMas .button:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
 }
@@ -374,10 +384,14 @@ main .novedades h1 {
   font-weight: 300;
 }
 
-main .novedades button {
+main .novedades .button {
+  text-decoration: none;
   -webkit-transform: skew(0deg, 5deg);
           transform: skew(0deg, 5deg);
   margin-bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #00F3BB;
   height: 48px;
   width: 288px;
@@ -389,9 +403,15 @@ main .novedades button {
   letter-spacing: 0;
   text-align: center;
   line-height: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .novedades button:hover {
+main .novedades .button:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
 }
@@ -529,7 +549,7 @@ footer .redes a:hover {
             justify-content: flex-start;
     margin-left: 13.9%;
   }
-  main .conoceMas button {
+  main .conoceMas .button {
     width: 226px;
     height: 56px;
     font-size: 18px;
@@ -646,7 +666,7 @@ footer .redes a:hover {
     font-weight: 400;
     margin-bottom: 40px;
   }
-  main .novedades button {
+  main .novedades .button {
     width: 345px;
     height: 56px;
     font-size: 18px;
