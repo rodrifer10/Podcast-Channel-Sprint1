@@ -2,4 +2,4 @@
 
 Desarrollo de una página web que aloja podcasts embebidos de Spotify, con navegación interna.
 
-Puro HTML, CSS y SASS.
+Puro HTML, CSS y SCSS.
